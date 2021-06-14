@@ -6,8 +6,9 @@ import com.marcohnp.nivelamento.model.request.ContatoRequest;
 import com.marcohnp.nivelamento.model.response.ContatoResponse;
 import lombok.NoArgsConstructor;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Optional;
 
 @NoArgsConstructor
 public class ContatoMapper {
