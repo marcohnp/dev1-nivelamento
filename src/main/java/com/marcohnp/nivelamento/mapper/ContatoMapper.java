@@ -35,7 +35,7 @@ public class ContatoMapper {
                 .orElse(null);
     }
 
-    public static ContatoModel mapRequestToModel (ContatoRequest contatoRequest) {
+    public static ContatoModel mapRequestToModel(ContatoRequest contatoRequest) {
         return Optional.ofNullable(contatoRequest)
                 .map(request -> ContatoModel.builder()
                         .id(request.getId())
@@ -47,7 +47,7 @@ public class ContatoMapper {
     }
 
 
-    public static ContatoEntity mapToEntity (ContatoModel contatoModel) {
+    public static ContatoEntity mapToEntity(ContatoModel contatoModel) {
         return Optional.ofNullable(contatoModel)
                 .map(request -> ContatoEntity.builder()
                         .id(request.getId())
